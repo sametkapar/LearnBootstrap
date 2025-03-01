@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Popover Kullanımı</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesom-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Başlık" data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, perferendis voluptatibus labore quibusdam quia in amet voluptates nisi. Molestias, alias.">
+                Popover kullanımı
+            </button>
+        </div>
+        <script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var popverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverlist = popverTriggerList.map(function(text){
+                return new  bootstrap.Popover(text)
+            })
+        </script>
+    </body>
+</html>

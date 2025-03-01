@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Collapse Kullanimi</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesom-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h2>Basitçe Collapse Nedir?</h2>
+            <a href="#paragrafim" class="btn btn-warning" data-bs-toggle="collapse"> Aç / Kapat</a>
+            <div id="paragrafim" class="collapse show">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati porro magni aliquam animi eos, eius dolores blanditiis eligendi officiis architecto assumenda quis sit aut dolorem sed, dolorum facilis fugiat quos. Assumenda at quasi, voluptates corrupti porro error commodi animi vero minima beatae. Accusamus ullam a optio quae quo veritatis adipisci.
+            </div>
+        </div>
+        <div class="container mt-2">
+          <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#icerikbir" class="btn" data-bs-toggle="collapse">Akordiyon içeriği 1</a>
+                </div>
+                <div id="icerikbir" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt adipisci repellat esse nihil maiores dignissimos voluptatum cupiditate expedita et molestias commodi dolorum exercitationem atque facere itaque laudantium, dolore ab?
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#icerikik" class="btn" data-bs-toggle="collapse">Akordiyon içeriği 2</a>
+                </div>
+                <div id="icerikiki" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt adipisci repellat esse nihil maiores dignissimos voluptatum cupiditate expedita et molestias commodi dolorum exercitationem atque facere itaque laudantium, dolore ab?
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
